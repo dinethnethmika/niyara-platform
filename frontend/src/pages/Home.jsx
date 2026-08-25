@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar.jsx';
 
 export default function Home() {
     return (
         <div className="app-container">
-            <h1>Niyara Platform Initialized</h1>
+            <Navbar />
         </div>
-    )
+    );
 } 
     

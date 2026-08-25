@@ -14,3 +14,59 @@ body{
     background-color: #050a06;
     color: #ffffff;
 }
+
+/*  navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    z-index: 100;
+    background: rgba(5, 10, 6, 0.7); 
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #4ade80 ;
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #d1d5db ;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: #4ade80 ;
+}
+
+.login-btn{
+    border: 1px solid #4ade80 ;
+    background: transparent;
+    color: #4ade80 ;
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: bold;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover{
+    background: #4ade80 ;
+    color: #000;
+}
