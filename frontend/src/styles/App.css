@@ -353,3 +353,192 @@ body{
   font-size: 16px;
   letter-spacing: 1px;
 }
+
+/* =========================================
+   MODERN FOOTER STYLES
+   ========================================= */
+.footer-section {
+  background: #020402; 
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 80px 8% 20px;
+  margin-top: 50px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.footer-text, 
+.footer-col a {
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #4ade80;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 16px;
+  height: 16px;
+  color: #9ca3af;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* =========================================
+   GENERAL MOBILE RESPONSIVE TWEAKS
+   ========================================= */
+@media (max-width: 900px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-background-shard {
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 60%);
+    mask-image: linear-gradient(to top, transparent 0%, black 60%);
+    opacity: 0.3; 
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-text, .map-card {
+    width: 100%;
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .final-section {
+    justify-content: center;
+  }
+  .final-content {
+    width: 100%;
+    text-align: center;
+  }
+  .final-background-shard {
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 60%);
+    mask-image: linear-gradient(to top, transparent 0%, black 60%);
+    opacity: 0.25; 
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+  .rice-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-area {
+    width: 100%;
+  }
+  .plant-area {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .hero-description, .description {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   FINAL CTA SECTION (PUSHED RIGHT)
+   ========================================= */
+.final-section {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  overflow: hidden;
+  padding: 80px 10%;        
+  background: #050a06;
+  text-align: center;
+}
+
+.final-content {
+  position: relative;
+  z-index: 2;
+  width: 42%;               
+  text-align: left;
+  margin-left: auto;        
+}
+
+.final-background-shard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%; 
+  height: 100%;
+  background-image: url('./farmer.jpg'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  opacity: 0.6; 
+  z-index: 1;
+}
