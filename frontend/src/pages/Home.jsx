@@ -4,6 +4,7 @@ import Hero from '../components/Hero.jsx';
 import GrowingRice from '../components/GrowingRice.jsx';
 import Features from '../components/Features.jsx';
 import About from '../components/About.jsx';
+import Footer from '../components/Footer.jsx';
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <GrowingRice />
             <Features />
             <About />
+            <Footer />
         </div>
     );
 } 
