@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Hero from '../components/Hero.jsx';
 import GrowingRice from '../components/GrowingRice.jsx';
+import Features from '../components/Features.jsx';
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <Navbar />
             <Hero />
             <GrowingRice />
+            <Features />
         </div>
     );
 } 
