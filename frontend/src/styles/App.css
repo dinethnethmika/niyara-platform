@@ -223,3 +223,58 @@ body{
 .text-area {
   width: 50%;
 }
+
+/* =========================================
+   MODERN FEATURES GRID (Preserved for future use)
+   ========================================= */
+.features-section {
+  padding: 100px 8%;
+  background: #050a06;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-box, .feature {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(74, 222, 128, 0.1);
+  border-radius: 16px;
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.feature-box:hover, .feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(74, 222, 128, 0.08);
+  border-color: rgba(74, 222, 128, 0.3);
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.icon-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-box h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
