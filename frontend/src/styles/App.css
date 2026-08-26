@@ -278,3 +278,78 @@ body{
   margin: 0;
   letter-spacing: 0.5px;
 }
+
+.about-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 8%;
+  background: #050a06;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.map-card {
+  width: 45%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(74, 222, 128, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.map-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(74,222,128,0.2) 0%, rgba(0,0,0,0) 70%);
+  z-index: 0;
+}
+
+.sri-lanka-map {
+  width: 150px;
+  height: auto;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(74, 222, 128, 0.5));
+  margin-bottom: 30px;
+}
+
+.counter-box {
+  z-index: 1;
+  text-align: center;
+}
+
+.farmer-count {
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.farmer-count span {
+  color: #4ade80;
+}
+
+.counter-box p {
+  color: #9ca3af;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
