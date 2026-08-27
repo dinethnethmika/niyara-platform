@@ -89,7 +89,7 @@ body{
     width: 60%;
     height: 100%;
 
-    background-image: url('.rice.jpg');
+    background-image: url('../assets/rice.jpg');
     background-size: cover;
     background-position: center;
     
@@ -534,11 +534,79 @@ body{
   left: 0;
   width: 60%; 
   height: 100%;
-  background-image: url('./farmer.jpg'); 
+  background-image: url('../assets/farmer.jpg'); 
   background-size: cover;
   background-position: center;
   -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
   mask-image: linear-gradient(to right, black 50%, transparent 100%);
   opacity: 0.6; 
   z-index: 1;
+}
+
+/* =========================================
+   AUTHENTICATION (LOGIN/SIGNUP)
+   ========================================= */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(74, 222, 128, 0.15);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px); /* Gives it that premium glass look */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #111827;
+  color: white;
+  font-family: inherit;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #4ade80; /* Glows green when you click it! */
+}
+
+.auth-link {
+  color: #4ade80;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #ffffff;
+}
+
+.auth-background {
+  /* We use linear-gradient to put a dark, 85% transparent black layer OVER the image */
+  background: linear-gradient(rgba(5, 10, 6, 0.50), rgba(5, 10, 6, 0.95)), url('../assets/paddy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
